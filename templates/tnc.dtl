@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Entertainmentlife</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='/js/jquery-1.7.1.min.js'></script>  
+<!--<script src="/js/angular.min.js"></script>
+<script src="/js/controllers.js"></script>   
+<script src="/js/ui-bootstrap-tpls-0.6.0.js"></script>
+<script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>-->
+<script language="javascript" src="/js/html5.js"></script>
+<!-- <script src="/js/flowplayer/flowplayer-3.2.13.min.js"></script> -->
+
+    <script src="/js/play_video.js"></script>
+    <script type="text/javascript" src="http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
+<script type="text/javascript">jwplayer.key="L0SAYMTJJs/IIkeci5tG4vgIMGHAc6YFBtmJaA==";</script></script>
+ <style type="text/css">
+            a[href="http://img1.contentapi.ws/"] {
+                display: none;
+            }            
+        </style>
+
+<!-- google analytics start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43119651-11', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics end -->
+
+</head>
+
+<body>
+<!-- index.html -->
+<div class="container">
+	<div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>
+    
+  <header>
+  <a href="/" title="Entertainmentlife" class="logo left"><img src="images/logo.png" alt="" /></a>
+    
+    <div class="TopRight">
+    	<div class="menu"> <span>MENU</span>
+          <ul class="Navigation">
+            <li> <a  href="/" title="Home"><img src="images/home-icon.png" />Home</a> </li>
+            <li> <a href="/more_videos" title="Gossip"><img src="images/nav-gissip.png" />Gossip</a> </li>
+            <li><a href="/more_news" title="News"><img src="images/nav-news.png" /> News</a></li>
+            <li><a href="/music" title="Music"><img src="images/nav-gallery.png" /> Music</a></li>
+          </ul>
+        </div>
+        <!-- menu end --> 
+    </div>
+    <!-- TopRight end -->
+    <span class="clear"></span>
+    </header>
+
+    <div class="slideshow"> 
+        <div class="module video-stream">
+          <h2>{{videoParam.title}}</h2>
+          <input type="hidden" name="vide_val" id="video_val" value="{{videoParam.video}}">
+          <div id="trailor">Loading the player...</div>
+        </div><!-- video module end -->
+    </div>
+    <!-- slideshow end -->
+	 <span class="clear"></span>
+   <br>
+    <div>
+        <div class="module about_cont">
+        <h2>Terms & Conditions </h2>
+        <p class="aboutus-text">
+              <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> reserves the right to update or modify these Terms & Conditions at any time without prior notice. Updates will be posted to this page and are effective upon posting.</p>
+
+              <p class="aboutus-text"><b>Online Conduct</b><br>
+
+              Any conduct by you that in our sole discretion restricts or inhibits any other user from using or enjoying <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> will not be permitted. You agree to use <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> in accordance with these Terms of Use and only for lawful purposes. You are prohibited from posting on or transmitting through <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> any unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, sexually explicit, profane, hateful, racially, ethnically, or otherwise objectionable material of any kind, including but not limited to any material that encourages conduct that would constitute a criminal offense, give rise to civil liability, or otherwise violate any applicable local, state, national, or international law.</p>
+
+              <p class="aboutus-text">
+
+              <b>Trademarks</b><br/>
+              All the Content on this website is subject to copyright, trademark, service mark, trade dress and other intellectual property rights or licenses held by <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, LLC and its licensors. All site design, text, typefaces, graphics, videos, sound, interfaces and their arrangements are the property of <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, LLC. You may only download, print and store selected portions of the Content for your personal, non-commercial use where it is related to shopping from this site and placing an order.</p>
+
+              <p class="aboutus-text">
+              <b>Disclaimers and Limitation of Liability</b><br>
+
+              You expressly agree that use of <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> is at your sole risk and <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> shall not be liable for any damages of any kind related to your use of this website.. You must be 18 years or older to register as a member. The website and content are provided on an "as is" basis without warranty of any kind, including implied warranties of merchantability or fitness for a particular purpose.<br>
+              We make every attempt to ensure that the content on this website is complete, current and accurate. However, we cannot guarantee that the information contained on this website will not contain errors, inaccuracies or omissions. Such errors may relate to product availability, price or product description. <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> reserves the right to refuse or cancel any orders containing any error, inaccuracy or omission. This may include orders that have been submitted, confirmed or charged to your credit card. If an order is canceled after your credit card has been charged, it will be fully refunded.
+              Under no circumstances shall WineSpotlight.com or any other party involved in creating, producing, or distributing WineSpotlight.com be liable for any direct, indirect, incidental, special, or consequential damages, including without limitation, lost profits that result from the use of or inability to use <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, including but not limited to reliance by you on any information obtained from <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> or that result from mistakes, omissions, interruptions, deletion of files or email, errors, defects, viruses, delays in operation or transmission, or any failure of performance, whether or not resulting from acts of god, communications failure, theft, destruction, or unauthorized access to the company’s records, programs, or services. You hereby acknowledge that this paragraph shall apply to all content, merchandise, and services available through <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>. Because some states do not allow the exclusion or limitation of liability for consequential or incidental damages, in such states liability is limited to the fullest extent permitted by law.</p>
+
+              <p class="aboutus-text"><b>Hyperlinks to Other Websites</b><br>
+               
+              This website may contain links to other websites that are not owned by <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> (collectively Third Party Sites), although such sites may have an affiliation with <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>. You acknowledge that such <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> is not responsible for the availability of or content located on any Third Party Site.</p>
+
+              <p class="aboutus-text"><b>Distribution/Uploading of Third Party Content</b><br>
+
+              Any Content you submit or make available for inclusion on the website shall become the sole property of <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, LLC. Regarding all such Content, including, without limitation, creative ideas, suggestions, content, postings, artwork, photograph, material or other submissions (collectively, "User Submissions"), you grant <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a> the right to use, reproduce, disclose, publish and distribute any material you submit for any reason without compensation.<br/>
+
+              No User Submissions, regardless of how they may be marked, will be received by us in confidence, nor shall they be subject to any express or implied obligation of confidentially. Neither <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, nor its Affiliates, nor their respective officers, directors, agents or employees shall be liable for any use or disclosure of any User Submissions.<br>
+
+              In addition, <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, in our sole discretion, at any time and without prior notice to you, suspend or terminate any public forum, any other portion of the Web Site, or the subscription or registration of any user who violates any of these terms and conditions of use, any of the rules, regulations or guidelines or for any other behavior that we in our sole discretion believe is inappropriate.</p>
+
+              <!-- Privacy Policy<br>
+              <p class="aboutus-text">
+              At <a class="blue" href="http://entertainmentlife.net/">entertainmentlife.net</a>, we recognize and respect the importance of maintaining the privacy of our customers and members and have established a privacy policy as a result. In our Privacy Policy we describe why we gather customer and member information, what information we collect, how we collect it, what we use the information for and how you can instruct us if you prefer to limit the use of that information. We encourage you to carefully read our Privacy Policy. Click here to read our Privacy Policy.</p> -->        
+        <span class="clear"></span>
+      </div>
+      <!-- module end --> 
+    </div>
+    <span class="clear"></span></section>
+  <div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>  
+  <div class="footer-outer">
+  <footer>
+    <span class="right">
+        <a href="https://twitter.com/Entmt_Life" target="_blank"><img src="/images/twitter.png"></a>
+        <a href="https://www.facebook.com/pages/Entertainment-Life/683810265010132" target="_blank"><img src="/images/facebook.png"></a>       
+    </span>
+  	<p><a href="/">Home</a> | <a href="/more_videos">Gossips</a> | <a href="/more_news">News</a> | <a href="/music">Music</a> | <a href="/termsandconditions">Terms & Conditions</a></p>
+    <summary>Copyright &copy;  {%now "Y"%}  Entertainmentlife. All Rights Reserved.</summary>
+  </footer>
+  </div>
+</div>
+<!-- container end -->
+</body>
+</html>

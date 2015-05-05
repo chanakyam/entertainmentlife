@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Entertainmentlife</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='/js/jquery-1.7.1.min.js'></script>  
+<!--<script src="/js/angular.min.js"></script>
+<script src="/js/controllers.js"></script>   
+<script src="/js/ui-bootstrap-tpls-0.6.0.js"></script>-->
+<script language="javascript" src="/js/html5.js"></script>
+<!-- <script src="/js/flowplayer/flowplayer-3.2.13.min.js"></script> -->
+
+    <script src="/js/play_video.js"></script>
+    <script type="text/javascript" src="http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
+<script type="text/javascript">jwplayer.key="L0SAYMTJJs/IIkeci5tG4vgIMGHAc6YFBtmJaA==";</script></script>
+<script>
+//  // start of code for generating cb,pagetit,pageurl
+//   var vastURI = 'http://vast.optimatic.com/vast/getVast.aspx?id=m0713sn36r&zone=vpaidtag&pageURL=[INSERT_PAGE_URL]&pageTitle=[INSERT_PAGE_TITLE]&cb=[CACHE_BUSTER]';
+//   function updateURL(vastURI){
+//   // Generate a huge random number
+//   var ord=Math.random(), protocol, host, port, path, pageUrl, updatedURI;
+//   var parsedFragments = parseUri(vastURI);
+//   ord = ord * 10000000000000000000;
+//   // Protocol of VAST URI
+//   protocol = parsedFragments.protocol;
+//   // VAST URI hostname
+//   host = parsedFragments.host;
+//   // VAST URI Path
+//   path = parsedFragments.path;
+//   //VAST Page Url
+//   pageUrl = parsedFragments.queryKey.pageUrl
+//   var fragmentString ='';
+//   //Updated URI
+//   for(var key in parsedFragments.queryKey){//console.log("abhii");console.log();
+//     // For Cache buster add a large random number
+//     if(key == 'cb'){
+//       fragmentString = fragmentString + key + '=' + ord + '&';  
+//     }
+//     // for referring Page URL, get the current document URL and encode the URI
+//     else if(key == 'pageURL'){
+//       var currentUrl = document.URL;
+//       //var currentUrl = "http://test.com";
+//       fragmentString = fragmentString + key + '=' + currentUrl + '&'; 
+//     }else if(key == 'pageTitle'){
+//       //var currentTit = document.title;
+//       //var currentUrl = "http://test.com";
+//       var page_title=document.title;
+//       fragmentString = fragmentString + key + '=' + page_title + '&'; 
+//     }
+//     else{
+//       fragmentString = fragmentString + key + '=' + parsedFragments.queryKey[key] + '&';
+//     }
+    
+//   }
+
+//   updatedURI = protocol + '://' + host + path + '?' + fragmentString ;
+  
+//   // Remove the trailing & and return the updated URL
+//   return updatedURI.slice(0,-1);
+//   //return encodeURI(updatedURI.slice(0,-1)); 
+
+//   }
+
+//   // Parse URI to get qeury string like cb for cache buster and pageurl
+//   function parseUri (str) {
+//     var o   = parseUri.options,
+//       m   = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
+//       uri = {},
+//       i   = 14;
+
+//     while (i--) uri[o.key[i]] = m[i] || "";
+
+//     uri[o.q.name] = {};
+//     uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+//       if ($1) uri[o.q.name][$1] = $2;
+//     });
+
+//     return uri;
+//   };
+
+//   parseUri.options = {
+//     strictMode: false,
+//     key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
+//     q:   {
+//       name:   "queryKey",
+//       parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+//     },
+//     parser: {
+//       strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+//       loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+//     }
+//   };
+//   // end of code for generating cb,pagetit,pageurl
+//     $(document).ready(function() {
+//       jwplayer('play_trailor').setup({
+//                   "flashplayer": "http://player.longtailvideo.com/player.swf",
+//                   "playlist": [
+//                     {
+//                       "file": "http://video1.contentapi.ws/{{allnews.video}}"
+//                     }
+//                   ],
+//                   "width": 638,
+//                   "height": 452,
+//                   skin: "http://content.longtailvideo.com/skins/glow/glow.zip",
+//                   autostart: false,
+//                   "controlbar": {
+//                     "position": "bottom"
+//                   },
+//                   "plugins": {
+//                      "autoPlay": false,
+//                     "ova-jw": {
+//                       "ads": {
+//                         // "companions": {
+//                         //   "regions": [
+//                         //     {
+//                         //       "id": "companion",
+//                         //       "width": 80,
+//                         //       "height": 300
+//                         //     }
+//                         //   ]
+//                         // },
+//                         "schedule": [
+//                           {
+//                             "position": "pre-roll",
+//                             "tag": updateURL(vastURI)
+//                             //"tag": "http://vast.optimatic.com/vast/getVast.aspx?id=w984i078l984&zone=vpaidtag&pageURL=[INSERT_PAGE_URL]&pageTitle=[INSERT_PAGE_TITLE]&cb=[CACHE_BUSTER]"
+//                           }
+//                         ]
+//                       },
+//                       "debug": {
+//                         "levels": "none"
+//                       }
+//                     }
+//                   }
+//                 });
+// });
+ </script>
+
+<!-- google analytics start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43119651-11', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics end -->
+ 
+</head>
+
+<body>
+<!-- video.dtl -->
+<div class="container">
+	<div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>
+    
+  <header>
+  <a href="/" title="Entertainmentlife" class="logo left"><img src="images/logo.png" alt="" /></a>
+    
+    <div class="TopRight">
+      <div class="menu"> <span>MENU</span>
+      <ul class="Navigation">
+        <li> <a href="/" title="Home"><img src="images/home-icon.png" />Home</a> </li>
+        <li> <a class="active" href="/more_videos" title="Gossip"><img src="images/nav-gissip.png" />Gossip</a> </li>
+        <li><a href="/more_news" title="News"><img src="images/nav-news.png" /> News</a></li>
+        <li><a href="/music" title="Music"><img src="images/nav-gallery.png" /> Music</a></li>
+      </ul>
+    </div>
+    <!-- menu end --> 
+    </div>
+    <!-- TopRight end -->
+    <span class="clear"></span>
+    </header>
+    <div class="slideshow"> 
+            <div class="video-stream">
+              <h2>{{allnews.title}}</h2>
+              <input type="hidden" name="vide_val" id="video_val" value="{{allnews.video}}">
+              <div id="trailor">Loading the player...</div>
+            </div><!-- video module end -->
+      </div>
+    <!-- slideshow end -->
+    <section class="contentarea">
+            <aside class="leftcontent">
+               <!--  <div class="middle">
+                                           
+                        <div class="module"> 
+                          <div class=" video-stream">
+                            <h2>{{allnews.title}}</h2>
+                            <div id="play_trailor" >Loading the player...</div>
+                            <h2>{{allnews.description}}</h2>
+                          </div><!-- video module end -->
+                        <!-- </div> -->
+                        <!-- slideshow end -->
+                    
+                <!--</div> -->
+                 <!-- <a href="/more_videos" class="more">more videos</a> -->
+                <span class="clear"></span>
+                <div class="middle-ad">
+                  <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=197745"></script>
+                </div>
+                <div class="module" >
+                    <h2>Latest Gossips</h2>                    
+                    <div class="row" >
+                      {% for videos in latestvideos %}
+                        <div class="NewsDiv">
+                          <a title="{{ videos.title }}" href="/video?id={{videos.id}}" >
+                            <img src="http://img1.contentapi.ws/{{ videos.thumb_image }}" alt="" />
+                            <span class="play"></span> 
+                          </a>
+                        </div> 
+                        {% endfor %}                      
+                        <!-- NewsDiv end -->
+                    </div>
+                    <span class="clear"></span>
+                    <a href="/more_videos" class="more">more videos</a>
+                     <span class="clear"></span>
+                </div>
+
+                <div class="module ">
+                    <h2>Latest News</h2>  
+                    <div class="FeatureLatest">
+                      {% for news in latestnews %}                  
+                        <div class="width50">
+                          <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
+                            <!-- <div class="LatestNews-thumb imgClass">
+                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                            </div> -->
+                            <div class="LatestNews-description">
+                             <h3>{{news.value.title }}</h3>
+                                 <p>{{news.value.description }}  {{news.value.upload_date }}</p>
+                                   More...
+                            </div></a>
+                        </div>
+                        {% endfor %}
+                        <!-- width50 end -->                       
+                        
+                    </div>
+                    <a href="/more_news" class="more">more news</a>
+                    <span class="clear"></span>
+                </div>
+                <!-- Latest News end -->
+            </aside>
+    
+    
+    <aside class="sidebar">
+    	<div class="rightad">
+        <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=197745"></script>
+      </div>
+
+      <div class="module ">
+          <h2>Popular News</h2>  
+          <div class="LatestNewsRight">   
+            {%for news in popularnews %}               
+              <div class="row-news">
+                <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
+                  <div class="LatestNews-thumb imgClass">
+                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                  </div>
+                  <div class="LatestNews-description">
+                   <h3>{{news.value.title }}</h3>
+                       <p>{{news.value.description }} {{news.value.upload_date }}</p>
+                         More...
+                  </div></a>
+              </div>
+            {% endfor %}
+              <!-- width50 end -->                       
+            
+              
+          </div>
+          <a href="/more_news" class="more">more news</a>
+          <span class="clear"></span>
+      </div>      
+      
+      <div class="politicsPictures margin20_T center">
+      	<div class="rightad2">
+          <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=160X600&cwpid=557677&cwwidth=160&cwheight=600&cwpnet=1&cwtagid=197744"></script>
+        </div>
+        
+        <span class="clear"></span>
+        </div>
+      <!-- politicsPictures end --> 
+      
+      <!-- <div class="rightad margin20_T">
+        <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=197745"></script>
+      </div> -->
+     
+    </aside>
+    <span class="clear"></span></section>
+  <div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>
+  
+  <div class="footer-outer">
+  <footer>
+    <span class="right">
+        <a href="https://twitter.com/Entmt_Life" target="_blank"><img src="/images/twitter.png"></a>
+        <a href="https://www.facebook.com/pages/Entertainment-Life/683810265010132" target="_blank"><img src="/images/facebook.png"></a>       
+    </span>
+    <p><a href="/">Home</a> | <a href="/more_videos">Gossips</a> | <a href="/more_news">News</a> | <a href="/music">Music</a> | <a href="/termsandconditions">Terms & Conditions</a></p>
+    <summary>Copyright &copy;  {%now "Y"%}  Entertainmentlife. All Rights Reserved.</summary>
+  </footer>
+  </div>
+</div>
+<!-- container end -->
+</body>
+</html>

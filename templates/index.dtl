@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- <html ng-app="showbiz"> -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EntertainmentLife</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='/js/jquery-1.7.1.min.js'></script>  
+<!-- <script src="/js/angular.min.js"></script> -->
+<!-- <script src="/js/controllers.js"></script>    -->
+<!-- <script src="/js/ui-bootstrap-tpls-0.6.0.js"></script> -->
+<script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>
+<script language="javascript" src="/js/html5.js"></script>
+<!-- <script src="/js/flowplayer/flowplayer-3.2.13.min.js"></script> -->
+
+    <script src="/js/play_video.js"></script>
+    <script type="text/javascript" src="http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
+<script type="text/javascript">jwplayer.key="L0SAYMTJJs/IIkeci5tG4vgIMGHAc6YFBtmJaA==";</script></script>
+ <style type="text/css">
+            a[href="http://img1.contentapi.ws/"] {
+                display: none;
+            }            
+ </style>
+
+<!-- google analytics start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43119651-11', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics end -->
+
+</head>
+
+<body>
+<!-- index.html -->
+<div class="container">
+	<div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>
+    
+  <header>
+    <a href="/" title="Entertainmentlife" class="logo left"><img src="images/logo.png" alt="" /></a>
+    
+    <div class="TopRight">
+    	<div class="menu"> <span>MENU</span>
+          <ul class="Navigation">
+            <li> <a class="active" href="/" title="Home"><img src="images/home-icon.png" />Home</a> </li>
+            <li> <a href="/more_videos" title="Gossip"><img src="images/nav-gissip.png" />Gossip</a> </li>
+            <li><a href="/more_news" title="News"><img src="images/nav-news.png" /> News</a></li>            
+            <li><a href="/music" title="Music"><img src="images/nav-gallery.png" /> Music</a></li>
+          </ul>
+        </div>
+        <!-- menu end --> 
+    </div>
+    <!-- TopRight end -->    
+    <span class="clear"></span>
+  </header>
+	
+    <div class="slideshow"> 
+      <div class="module video-stream">
+        <h2>{{videoParam.title}}</h2>
+        <input type="hidden" name="vide_val" id="video_val" value="{{videoParam.video}}">
+        <div id="trailor">Loading the player...</div>       
+      </div><!-- video module end -->
+    </div>
+    <!-- slideshow end -->
+  
+        <section class="contentarea">
+            <aside class="leftcontent">               
+                <div class="module" >
+                    <h2>Latest Gossips</h2>                    
+                    <div class="row" >
+                      {% for videos in latestvideos %}
+                        <div class="NewsDiv">
+                          <a title="{{ videos.title }}" href="/video?id={{videos.id}}" >
+                            <img src="http://img1.contentapi.ws/{{ videos.thumb_image }}" alt="" />
+                            <span class="play"></span> 
+                          </a>
+                        </div> 
+                        {% endfor %}                      
+                        <!-- NewsDiv end -->
+                    </div>
+                    <span class="clear"></span>
+                    <a href="/more_videos" class="more">more videos</a>
+                     <span class="clear"></span>
+                </div>
+                <!-- Gossip Videos module end -->       
+             
+                  <div class="middle-ad">
+                    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=197745"></script>
+                  </div> 
+               
+                <span class="clear"></span>
+                <div class="module ">
+                    <h2>Latest News</h2>  
+                    <div class="FeatureLatest">
+                      {% for news in latestnews %}                  
+                        <div class="width50">
+                          <a title="{{news.value.title}}" href="/more?id={{news.value.id}}"> 
+                            <div class="LatestNews-thumb imgClass">
+                                <img src="http://img1.contentapi.ws/{{news.value.view_image}}" alt="" />
+                            </div>
+                            <div class="LatestNews-description">
+                             <h3>{{news.value.title }}</h3>
+                                 <p><!-- {{news.value.description }} -->  {{news.value.upload_date }}</p>
+                                   More...
+                            </div></a>
+                        </div>
+                        {% endfor %}
+                        <!-- width50 end -->                       
+                        
+                    </div>
+                    <a href="/more_news" class="more">more news</a>
+                    <span class="clear"></span>
+                </div>
+
+                <span class="clear"></span>
+                <div class="module ">
+                    <h2>Music</h2>  
+                    <div class="FeatureLatest">
+                      {% for news in music %}                  
+                        <div class="width50">
+                          <a title="{{news.value.title}}" href="/more?id={{news.value.id}}"> 
+                            <div class="LatestNews-thumb imgClass">
+                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                            </div>
+                            <div class="LatestNews-description">
+                             <h3>{{news.value.title }}</h3>
+                                 <p><!-- {{news.value.description }} -->  {{news.value.upload_date }}</p>
+                                   More...
+                            </div></a>
+                        </div>
+                        {% endfor %}
+                        <!-- width50 end -->                       
+                        
+                    </div>
+                    <a href="/more_news" class="more">more news</a>
+                    <span class="clear"></span>
+                </div>
+                <!-- Latest News end -->
+                <!-- <div class="module gallery">
+                    <h2>Gallery</h2>                    
+                    <div class="row">
+                      {% for img in gallery %}
+                        <div class="NewsDiv imgClass">
+                          <a title="{{ img.title }}" href="/photo_gallery?c=image_gallery_view" >  
+                             <img src="http://img1.contentapi.ws/{{ img.thumb_image }}" alt="" style="height:160px" />
+                          </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <a href="/photo_gallery?c=image_gallery_view" class="more">more models</a>
+                    <span class="clear"></span>
+                </div> -->
+                <!-- Gallery module end -->
+      
+    </aside>
+    
+    
+    <aside class="sidebar">
+    	<div class="rightad">
+      <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=197745"></script>
+      </div>
+
+      <div class="module ">
+          <h2>Popular News</h2>  
+          <div class="LatestNewsRight">   
+            {%for news in popularnews %}               
+              <div class="row-news">
+                <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
+                  <!-- <div class="LatestNews-thumb imgClass">
+                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                  </div> -->
+                  <div class="LatestNews-description">
+                   <h3>{{news.value.title }}</h3>
+                       <p>{{news.value.description }} {{news.value.upload_date }}</p>
+                         More...
+                  </div></a>
+              </div>
+            {% endfor %}
+              <!-- width50 end -->                       
+            
+              
+          </div>
+          <a href="/more_news" class="more">more news</a>
+          <span class="clear"></span>
+      </div>
+
+      <div class="politicsPictures margin20_T">
+      	
+          <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=160X600&cwpid=557677&cwwidth=160&cwheight=600&cwpnet=1&cwtagid=197744"></script>
+        
+       
+       <span class="clear"></span>
+        </div>
+      <!-- politicsPictures end --> 
+      
+          
+    </aside>
+    <span class="clear"></span></section>
+  <div class="ad1">
+    <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=197746"></script>
+  </div>
+  
+  <div class="footer-outer">
+  <footer>
+    <span class="right">
+        <a href="https://twitter.com/Entmt_Life" target="_blank"><img src="/images/twitter.png"></a>
+        <a href="https://www.facebook.com/pages/Entertainment-Life/683810265010132" target="_blank"><img src="/images/facebook.png"></a>       
+    </span>
+  	<p><a href="/">Home</a> | <a href="/more_videos">Gossips</a> | <a href="/more_news">News</a> | <a href="/music">Music</a> | <a href="/termsandconditions">Terms & Conditions</a></p>
+    <summary>Copyright &copy;  {%now "Y"%}  Entertainmentlife. All Rights Reserved.</summary>
+  </footer>
+  </div>
+</div>
+<!-- container end -->
+</body>
+</html>
