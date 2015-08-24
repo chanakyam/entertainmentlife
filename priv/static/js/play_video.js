@@ -1,5 +1,5 @@
 $(document).ready(function() {			
-  var video = "http://video1.contentapi.ws/"+$('#video_val').val()   
+  var video = "http://newscdn.lycos.com/world_news/"+$('#video_val').val()   
   // start of code for generating cb,pagetit,pageurl
   var vastURI = 'http://vast.optimatic.com/vast/getVast.aspx?id=en732n1l1f3&zone=vpaidtag&pageURL=[INSERT_PAGE_URL]&pageTitle=[INSERT_PAGE_TITLE]&cb=[CACHE_BUSTER]';
   is_already_paused = false;

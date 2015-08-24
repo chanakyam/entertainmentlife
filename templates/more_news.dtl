@@ -70,7 +70,7 @@
                         <div class="width50">
                             <div class="LatestNews-thumb imgClass">
                                  <a href="/more?id={{n.value.id}}">
-                                 <img src="http://img1.contentapi.ws/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/></a>    
+                                 <img src="http://newscdn.lycos.com/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/></a>    
                             </div>
                             <div class="LatestNews-description">
                             <a href="/more?id={{n.value.id}}">
@@ -98,9 +98,9 @@
                     <h2>Latest Gossips</h2>                    
                     <div class="row" >
                       {% for videos in latestvideos %}
-                        <div class="NewsDiv">
+                        <div class="NewsDiv" id="img_width">
                           <a title="{{ videos.title }}" href="/video?id={{videos.id}}" >
-                            <img src="http://img1.contentapi.ws/{{ videos.thumb_image }}" alt="" />
+                            <img src="http://newscdn.lycos.com/world_news/{{ videos.thumb_image }}" alt="" />
                             <span class="play"></span> 
                           </a>
                         </div> 
@@ -127,7 +127,7 @@
               <div class="row-news">
                 <a title="{{news.value.title}}" href="/more?id={{news.value.id}}"> 
                   <!-- <div class="LatestNews-thumb imgClass">
-                      <img src="http://img1.contentapi.ws/{{n.valueews.thumb_image}}" alt="" />
+                      <img src="http://newscdn.lycos.com/{{n.valueews.thumb_image}}" alt="" />
                   </div> -->
                   <div class="LatestNews-description">
                    <h3>{{news.value.title }}</h3>

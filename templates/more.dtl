@@ -68,7 +68,7 @@
                 <div class="middle">
                     <div class="module">
                         <div class="module-inner">                        
-                            <img src="http://img1.contentapi.ws/{{allnews.base_image}}">             
+                            <img src="http://newscdn.lycos.com/{{allnews.base_image}}">             
                             <h2 > {{allnews.description}}</h2>                    
                             {{allnews.news_body}}
                         </div>
@@ -88,7 +88,7 @@
                         <div class="width50">
                           <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                             <div class="LatestNews-thumb imgClass">
-                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                                <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                             </div>
                             <div class="LatestNews-description">
                              <h3>{{news.value.title }}</h3>
@@ -119,7 +119,7 @@
               <div class="row-news">
                 <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                   <!-- <div class="LatestNews-thumb imgClass">
-                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                      <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                   </div> -->
                   <div class="LatestNews-description">
                    <h3>{{news.value.title }}</h3>

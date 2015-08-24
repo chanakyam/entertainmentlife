@@ -98,7 +98,7 @@
 //                   "flashplayer": "http://player.longtailvideo.com/player.swf",
 //                   "playlist": [
 //                     {
-//                       "file": "http://video1.contentapi.ws/{{allnews.video}}"
+//                       "file": "http://newscdn.lycos.com/world_news/{{allnews.video}}"
 //                     }
 //                   ],
 //                   "width": 638,
@@ -209,9 +209,9 @@
                     <h2>Latest Gossips</h2>                    
                     <div class="row" >
                       {% for videos in latestvideos %}
-                        <div class="NewsDiv">
+                        <div class="NewsDiv" id="img_width">
                           <a title="{{ videos.title }}" href="/video?id={{videos.id}}" >
-                            <img src="http://img1.contentapi.ws/{{ videos.thumb_image }}" alt="" />
+                            <img src="http://newscdn.lycos.com/world_news/{{ videos.thumb_image }}" alt="" />
                             <span class="play"></span> 
                           </a>
                         </div> 
@@ -230,7 +230,7 @@
                         <div class="width50">
                           <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                             <!-- <div class="LatestNews-thumb imgClass">
-                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                                <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                             </div> -->
                             <div class="LatestNews-description">
                              <h3>{{news.value.title }}</h3>
@@ -261,7 +261,7 @@
               <div class="row-news">
                 <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                   <div class="LatestNews-thumb imgClass">
-                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                      <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                   </div>
                   <div class="LatestNews-description">
                    <h3>{{news.value.title }}</h3>

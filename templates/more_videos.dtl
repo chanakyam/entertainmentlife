@@ -66,15 +66,15 @@
                 <div class="module more_news_module">
                     <h2>Latest Gossips</h2>   
                      {% for n in allnews %}                 
-                        <div class="width50">
+                        <div class="width50" id="img_width">
                             <div class="LatestNews-thumb imgClass">
-                                <a  href="/video?id={{n.id}}"><img src="http://img1.contentapi.ws/{{n.thumb_image}}"  alt="" title="{{n.title}}"/>
+                                <a  href="video?id={{n.id}}"><img src="http://newscdn.lycos.com/world_news/{{n.thumb_image}}"  alt="" title="{{n.title}}"/>
                                 <span class="play"></span></a>
                             </div>
                             <div class="LatestNews-description">
                                 <h3>{{n.title}} </h3>
                                 <span class="date">{{n.upload_date}}</span>  <br>
-                                <a style="color: #A0A0A0;" href="/video?id={{n.id}}"> More...</a>
+                                <a style="color: #A0A0A0;" href="world_news/video?id={{n.id}}"> More...</a>
                             </div>
                         </div>
                         <!-- width50 end -->
@@ -100,7 +100,7 @@
                         <div class="width50">
                           <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                             <div class="LatestNews-thumb imgClass">
-                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                                <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                             </div>
                             <div class="LatestNews-description">
                              <!-- <h3>{{news.value.title }}</h3> -->
@@ -131,7 +131,7 @@
               <div class="row-news">
                 <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                   <!-- <div class="LatestNews-thumb imgClass">
-                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                      <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                   </div> -->
                   <div class="LatestNews-description">
                    <h3>{{news.value.title }}</h3>

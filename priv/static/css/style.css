@@ -121,6 +121,8 @@ width:100%;
 .gallery .NewsDiv { width:320px; }
 .NewsDiv img {display:block; max-width:100%;}
 
+#img_width img {width: 100%;}
+
 .description {color:#010101; padding:10px 0; line-height:18px;}
 
 .leftcontent .width50{ min-height: 170px;} 

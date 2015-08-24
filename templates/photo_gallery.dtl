@@ -83,7 +83,7 @@
                 <!-- <div class="photo-gallery-interview_imgs">
                   <div id="interview_imgs">         
                     {% for img in allnews %}
-                      <div data-thumb="http://img1.contentapi.ws/{{ img.thumb_image }}" data-src="http://img1.contentapi.ws/{{ img.thumb_image }}" data-time="1700" data-trasPeriod="4000">  
+                      <div data-thumb="http://newscdn.lycos.com/{{ img.thumb_image }}" data-src="http://newscdn.lycos.com/{{ img.thumb_image }}" data-time="1700" data-trasPeriod="4000">  
                       <div class="camera_caption fadeFromRight">{{ img.description }} {{img.upload_date}}
                       </div>  
                       </div>          
@@ -97,7 +97,7 @@
                         <div class="width50">
                           <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                             <div class="LatestNews-thumb imgClass">
-                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                                <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                             </div>
                             <div class="LatestNews-description">
                              <!-- <h3>{{news.value.title }}</h3> -->
@@ -124,7 +124,7 @@
                         <div class="width50">
                           <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                             <div class="LatestNews-thumb imgClass">
-                                <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                                <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                             </div>
                             <div class="LatestNews-description">
                              <!-- <h3>{{news.value.title }}</h3> -->
@@ -153,7 +153,7 @@
               <div class="row-news">
                 <a title="{{news.value.name}}" href="/more?id={{news.value.id}}"> 
                   <!-- <div class="LatestNews-thumb imgClass">
-                      <img src="http://img1.contentapi.ws/{{news.value.thumb_image}}" alt="" />
+                      <img src="http://newscdn.lycos.com/{{news.value.thumb_image}}" alt="" />
                   </div> -->
                   <div class="LatestNews-description">
                    <!-- <h3>{{news.value.title }}</h3> -->
